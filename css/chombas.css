@@ -7,7 +7,16 @@
   src: url(../fonts/SedgwickAveDisplay-Regular.ttf);
 }
 
+.box img{
+  height: 10vh;
+  margin-left: 25%;
+}
 
+header{
+  display: grid;
+  grid-template-columns: 20fr 100fr;
+  height: 10vh;
+}
 
 navbar {
   width: 100%;

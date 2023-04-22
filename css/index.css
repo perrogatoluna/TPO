@@ -7,26 +7,16 @@
   src: url(../fonts/SedgwickAveDisplay-Regular.ttf);
 }
 
-
-
-
 .box img{
   height: 10vh;
   margin-left: 25%;
 }
 
 header{
-
   display: grid;
   grid-template-columns: 20fr 100fr;
   height: 10vh;
-
-
 }
-
-
-
-
 
 navbar {
   width: 100%;
@@ -69,70 +59,10 @@ navbar a {
 }
 
 
-#ofertas {
-  margin: 50px auto;
-    margin: opx auto;
-
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-dir* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  background-color: lightskyblue;
-  border: 5px solid black;
-}
-
-navbar li {
-  list-style: none;
-  display: inline;
-  padding: 10px;
-}
-
-navbar a {
-  text-decoration: none;
-  color: blue;
-}
-
-#portada {
-  margin: 50px auto;
-  width: auto;
-  margin: 20px auto;
-  /* background-color: blueviolet; */
-}
-
-#portada img {
-  width: 100%;
-  margin: 0;
-}
-
-#ofertas {
-  margin: 50px auto;
-  margin: opx auto;
-
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: row; */
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-}
-
-#ofertas img {
-  width: 200px;
-  /* border: 5px solid black; */
-}
-
 h1 {
   font-family: Sedgwick;
   text-align: center;
-  
-}
+  }
 
 
 
@@ -149,17 +79,11 @@ h1 {
   flex-wrap: wrap;
 }
 
-.link {
-  width: 200px;
-  text-align: center;
-}
 
-.bloque2 {
-  display: flex;
-  justify-content: center;
-  column-gap: 13%;
-  /* background-color: blueviolet; */
-  margin-top: 1%;
+.img_ropa * {
+  display: block;
+  text-align: center;
+  font-family: Sedgwick;
 }
 
 footer {
@@ -168,8 +92,4 @@ footer {
   margin-top: 100px;
 }
 
-.img_ropa * {
-  display: block;
-  text-align: center;
-  font-family: Sedgwick;
-}
+
