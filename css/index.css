@@ -86,10 +86,30 @@ h1 {
   font-family: Sedgwick;
 }
 
-footer {
-  height: 15vh;
+footer .linea1{
+  height: 10vh;
   background-color: grey;
   margin-top: 100px;
+  justify-content: center;
+  display: flex; 
 }
 
+footer .linea1 img{
+  height: 6vh;
+  margin-left: 5vh;
+  
+}
 
+footer .linea2{
+  /* height: 6vh; */
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .linea2 img{
+  height: 4vh;
+  margin-left: 5vh;
+  width: 4vh;
+  margin-bottom: 2vh;
+}
