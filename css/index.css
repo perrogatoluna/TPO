@@ -1,5 +1,6 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 @font-face {
@@ -86,6 +87,10 @@ h1 {
   font-family: Sedgwick;
 }
 
+
+/* Style footer */
+
+
 footer .linea1{
   height: 10vh;
   background-color: grey;
@@ -100,16 +105,24 @@ footer .linea1 img{
   
 }
 
+
 footer .linea2{
-  /* height: 6vh; */
+  /* height: 10vh; */
   background-color: grey;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr 9fr 1fr 9fr;
+
 }
 
-footer .linea2 img{
-  height: 4vh;
-  margin-left: 5vh;
-  width: 4vh;
-  margin-bottom: 2vh;
+
+footer .linea2 .iconos{
+  height: 6vh;
+  
 }
+
+.linea2 p{
+  margin-left: 2vh;
+  
+  
+}
+
