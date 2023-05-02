@@ -1,6 +1,5 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
 @font-face {
@@ -8,50 +7,70 @@
   src: url(../fonts/SedgwickAveDisplay-Regular.ttf);
 }
 
-.box img{
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: sedgwick;
+  text-align: center;
+}
+
+.box img {
   height: 10vh;
   margin-left: 25%;
 }
 
-header{
+header {
   display: grid;
   grid-template-columns: 20fr 100fr;
   height: 10vh;
+  width: 100%;
+  padding-bottom: 5px;
 }
 
-navbar {
-  width: 100%;
+.box_der {
   display: flex;
-  flex-direction: column;
-  align-items: end;
-  /* background-color: lightskyblue;
-  border: 5px solid black; */
+  justify-content: end;
+}
+
+header {
+  background-color: white;
 }
 
 navbar li {
   list-style: none;
   display: inline;
   padding: 10px;
-  
 }
 
 navbar a {
-  text-decoration: none;
-  color: #CAC9C9;
+  color: #cac9c9;
   font-family: Sedgwick;
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
-  background-color: #5E5C5D;
+  background-color: #5e5c5d;
+}
 
+navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+#contenido {
+  padding-top: 30px;
 }
 
 #portada {
   margin: 50px auto;
   width: auto;
   margin: 20px auto;
-  /* background-color: blueviolet; */
 }
 
 #portada img {
@@ -59,13 +78,10 @@ navbar a {
   margin: 0;
 }
 
-
 h1 {
   font-family: Sedgwick;
   text-align: center;
-  }
-
-
+}
 
 .bloque1 .img_ropa img {
   height: 300px;
@@ -80,49 +96,41 @@ h1 {
   flex-wrap: wrap;
 }
 
-
 .img_ropa * {
   display: block;
   text-align: center;
   font-family: Sedgwick;
 }
 
-
 /* Style footer */
 
-
-footer .linea1{
-  height: 10vh;
+footer {
+  padding: 15px 0 15px;
   background-color: grey;
-  margin-top: 100px;
+}
+
+footer img {
+  height: 6vh;
+}
+
+footer .linea1 {
+  display: flex;
   justify-content: center;
-  display: flex; 
+  padding: 10px 0 10px;
 }
 
-footer .linea1 img{
-  height: 6vh;
-  margin-left: 5vh;
-  
+footer .linea1 img {
+  padding: 0 50px;
 }
 
-
-footer .linea2{
-  /* height: 10vh; */
-  background-color: grey;
-  display: grid;
-  grid-template-columns: 1fr 9fr 1fr 9fr 1fr 9fr;
-
+footer .linea2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 10px;
 }
 
-
-footer .linea2 .iconos{
-  height: 6vh;
-  
+.mapa {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-
-.linea2 p{
-  margin-left: 2vh;
-  
-  
-}
-
