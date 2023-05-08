@@ -134,3 +134,40 @@ footer .linea2 {
   height: 100%;
   text-align: center;
 }
+
+.linea1 img {
+  transition: all 0.2s ease-in-out;
+}
+
+.linea1 img:hover {
+  transform: scale(1.5);
+}
+
+#contenido {
+  margin-bottom: 50px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15vh;
+  justify-content: space-between;
+  margin-top: 30vh;
+}
+
+.main div img {
+  height: 300px;
+  border-radius: 8px;
+}
+
+footer a {
+  color: black;
+}
+
+.contacto:hover {
+  color: mediumspringgreen;
+}
+
+.contacto a:hover {
+  color: mediumspringgreen;
+}
