@@ -2,9 +2,6 @@ const mensaje = document.getElementById("mensaje");
 const alerta = document.createElement('div')
 alerta.role = 'alert'
 
-//alerta.innerText = 'sasasas'
-
-
 function validarFormulario() {
   alerta.className = 'alert alert-danger'
   // Obtener los valores ingresados por el usuario y recortar
@@ -22,7 +19,6 @@ function validarFormulario() {
     return false;
   }
 
-
   // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
   for (var i = 0; i < nombre.length; i++) {
     var charCode = nombre.charCodeAt(i);
@@ -31,7 +27,6 @@ function validarFormulario() {
       alerta.innerText = "El campo 'nombre' solo puede contener caracteres alfabéticos y espacios."
       mensaje.appendChild(alerta);
       return false;
-
     }
   }
 
@@ -42,6 +37,7 @@ function validarFormulario() {
     mensaje.appendChild(alerta);
     return false;
   }
+
   for (var j = 0; j < celu.length; j++) {
     var digit = celu.charAt(j);
     if (digit < "0" || digit > "9") {
@@ -71,7 +67,6 @@ function validarFormulario() {
 btn = document.querySelector('.btn')
 btn.addEventListener('click', function (e) {
   e.preventDefault();
-
   validarFormulario();
 })
 
