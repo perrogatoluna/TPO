@@ -1,4 +1,3 @@
-
 const navbar = `
 <div class="box box_izq">
 <img class="animate__animated animate__rotateIn" src="img/cross-arrows.png" alt="">
