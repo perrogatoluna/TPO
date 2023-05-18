@@ -52,3 +52,23 @@ header.innerHTML = navbar;
 
 const footer_e = document.getElementById('footer')
 footer_e.innerHTML = footer;
+
+const api = "https://www.dolarsi.com/api/api.php?type=dolar"
+async function valordolar() {
+  try {
+    const response = await fetch(api)
+    const data = await response.json()
+
+    console.log("Datos de la api:", data);
+
+    document.getElementById("compra").innerHTML = data[1].casa.compra
+    document.getElementById("venta").innerHTML = data[1].casa.venta
+
+
+
+
+  }
+  catch (error) { console.log("Ocurrio un error grave", error) }
+}
+
+valordolar()
