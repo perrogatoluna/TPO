@@ -27,6 +27,8 @@ header {
   height: 10vh;
   width: 100%;
   padding-bottom: 5px;
+  background-color: white;
+
 }
 
 .box_der {
@@ -34,15 +36,16 @@ header {
   justify-content: end;
 }
 
-header {
-  background-color: white;
-}
+
 
 navbar li {
   list-style: none;
   display: inline;
-  padding: 10px;
+  padding: 0px;
+  margin-left: 5vh;
 }
+
+
 
 navbar a {
   color: #cac9c9;
@@ -52,6 +55,24 @@ navbar a {
   padding: 5px;
   background-color: #5e5c5d;
 }
+
+@media screen and (max-width: 940px) {
+  navbar a {
+    font-size: 8px;
+    padding: 1px;
+    border-radius: 3px;
+
+  }
+  /* navbar li {
+    flex-wrap: wrap;
+    margin-left: 2vh;  
+  } */
+  
+  
+  }
+
+  
+
 
 navbar a:hover {
   background-color: #ddd;
