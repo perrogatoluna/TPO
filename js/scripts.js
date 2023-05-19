@@ -53,6 +53,8 @@ header.innerHTML = navbar;
 const footer_e = document.getElementById('footer')
 footer_e.innerHTML = footer;
 
+//Consumo API
+
 const api = "https://www.dolarsi.com/api/api.php?type=dolar"
 async function valordolar() {
   try {
