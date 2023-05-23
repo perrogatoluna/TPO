@@ -1,9 +1,9 @@
 const navbar = `
-<div class="box box_izq">
+<div class="box_izq">
 <img class="animate__animated animate__rotateIn" src="img/cross-arrows.png" alt="">
 </div>
 
-<div class="box box_der">
+<div class="box_der">
 <navbar class="">
     <ul>
         <li><a href="index.html">Inicio</a></li>

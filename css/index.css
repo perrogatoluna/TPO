@@ -9,46 +9,41 @@
 
 /* Style header - navbar */
 
-a {
-  text-decoration: none;
-}
-
-
 p {
   font-family: sedgwick;
   text-align: center;
 }
 
-.box img {
+.box_izq img {
   height: 10vh;
-  margin-left: 25%;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 20fr 100fr;
-  height: 10vh;
-  width: 100%;
-  padding-bottom: 5px;
+#header {
+  display: flex;
   background-color: white;
+  border: 1px solid;
+}
 
+.box_izq {
+  align-content: center;
+  border: 1px solid;
 }
 
 .box_der {
   display: flex;
-  justify-content: end;
+  border: 1px solid;
+  width: 94vw;
+  justify-content: right;
+  align-items: center;
+
 }
-
-
 
 navbar li {
   list-style: none;
   display: inline;
-  padding: 0px;
-  margin-left: 5vh;
+  margin: 1vw;
+  
 }
-
-
 
 navbar a {
   color: #cac9c9;
@@ -57,33 +52,89 @@ navbar a {
   border-radius: 5px;
   padding: 5px;
   background-color: #5e5c5d;
+  text-decoration: none;
+
 }
-
-@media screen and (max-width: 940px) {
-  navbar a {
-    font-size: 8px;
-    padding: 1px;
-    border-radius: 3px;
-
-  }
-  /* navbar li {
-    flex-wrap: wrap;
-    margin-left: 2vh;  
-  } */
-  
-  
-  }
 
 navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+
 /* sticky le da estilo a chombas, contacto, index, jogging, remeras, ubicacion */
 .sticky {
   position: fixed;
   top: 0;
 }
 
+/* Responsive  para iphone 12/13 Pro Max 428x996*/
+
+@media screen and (max-width: 428px) {
+  #header {
+    display: flex;
+    background-color: white;
+    border: 1px solid;
+  
+  }
+  
+  .box_izq {
+    align-content: center;
+    border: 1px solid;
+    /* height: 5vh; */
+  }
+
+  .box_izq img {
+    height: 8vh;
+  }
+  
+  .box_der {
+    display: flex;
+    border: 1px solid;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    
+  
+  
+  }
+  
+  navbar li {
+    list-style: none;
+    display: inline; 
+    margin: 0px;
+
+    
+  }
+  
+  navbar a {
+    color: #cac9c9;
+    font-family: Sedgwick;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 1px;
+    background-color: #5e5c5d;
+    text-decoration: none;
+    font-size: 12px;
+  
+  }
+  
+  navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  }
+
+/*Responsive para iphone SE 375x667 */
+
+  @media screen and (max-width: 375px) {
+
+    navbar a {
+      font-size: 10px;
+
+
+  }
+}
 /* Style SECTION index */
 
 a {
