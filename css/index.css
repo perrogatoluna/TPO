@@ -35,14 +35,12 @@ p {
   width: 94vw;
   justify-content: right;
   align-items: center;
-
 }
 
 navbar li {
   list-style: none;
   display: inline;
   margin: 1vw;
-  
 }
 
 navbar a {
@@ -53,7 +51,6 @@ navbar a {
   padding: 5px;
   background-color: #5e5c5d;
   text-decoration: none;
-
 }
 
 navbar a:hover {
@@ -74,9 +71,8 @@ navbar a:hover {
     display: flex;
     background-color: white;
     border: 1px solid;
-  
   }
-  
+
   .box_izq {
     align-content: center;
     border: 1px solid;
@@ -86,26 +82,21 @@ navbar a:hover {
   .box_izq img {
     height: 8vh;
   }
-  
+
   .box_der {
     display: flex;
     border: 1px solid;
     width: 80vw;
     justify-content: center;
     align-items: center;
-    
-  
-  
   }
-  
+
   navbar li {
     list-style: none;
-    display: inline; 
+    display: inline;
     margin: 0px;
-
-    
   }
-  
+
   navbar a {
     color: #cac9c9;
     font-family: Sedgwick;
@@ -115,24 +106,19 @@ navbar a:hover {
     background-color: #5e5c5d;
     text-decoration: none;
     font-size: 12px;
-  
   }
-  
+
   navbar a:hover {
     background-color: #ddd;
     color: black;
   }
-  
-  }
+}
 
 /*Responsive para iphone SE 375x667 */
 
-  @media screen and (max-width: 375px) {
-
-    navbar a {
-      font-size: 10px;
-
-
+@media screen and (max-width: 375px) {
+  navbar a {
+    font-size: 10px;
   }
 }
 /* Style SECTION index */
@@ -144,7 +130,6 @@ a {
 #contenido {
   padding-top: 30px;
   margin-bottom: 50px;
-
 }
 
 #portada {
@@ -236,8 +221,6 @@ footer .linea2 {
   padding: 20px 0 10px;
 }
 
-
-
 .linea1 img {
   transition: all 0.2s ease-in-out;
 }
@@ -256,4 +239,33 @@ footer a {
 
 .contacto a:hover {
   color: mediumspringgreen;
+}
+
+#dolar {
+  text-align: center;
+}
+
+#clima {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+#clima span {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 845px) {
+  #clima {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin: auto;
+  }
+  #clima span {
+    margin: auto 0;
+    margin-right: 40%;
+  }
 }

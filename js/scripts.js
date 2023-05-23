@@ -55,22 +55,35 @@ footer_e.innerHTML = footer;
 
 //Consumo API
 
-const api = "https://www.dolarsi.com/api/api.php?type=dolar"
+const apiDolar = "https://www.dolarsi.com/api/api.php?type=dolar"
 async function valordolar() {
-  try {
-    const response = await fetch(api)
-    const data = await response.json()
-
-    console.log("Datos de la api:", data);
-
-    document.getElementById("compra").innerHTML = data[1].casa.compra
-    document.getElementById("venta").innerHTML = data[1].casa.venta
-
-
-
-
-  }
-  catch (error) { console.log("Ocurrio un error grave", error) }
+    try {
+        const response = await fetch(apiDolar)
+        const data = await response.json()
+        document.getElementById("compra").innerHTML = data[1].casa.compra
+        document.getElementById("venta").innerHTML = data[1].casa.venta
+    }
+    catch (error) { console.log("Ocurrio un error grave", error) }
 }
 
-valordolar()
+if (document.getElementById("compra")) {
+    valordolar();
+}
+
+const apiClima = 'https://api.openweathermap.org/data/2.5/weather?lat=-34.6263686&lon=-58.4741776&appid=e6d9d5b12bb8c8cd0c5eff8df1fc49a1&lang=es&units=metric'
+
+async function clima() {
+    try {
+        const response = await fetch(apiClima)
+        const data = await response.json()
+        let div = document.getElementById('clima')
+        div.innerHTML = '<span>' + data.main.temp + '° </span > '
+        let url = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png'
+        div.innerHTML += '<img alt="icon" src=' + url + ' width="120" height="100" />'
+    }
+    catch (error) { console.log("Ocurrio un error grave", error) }
+}
+
+if (document.getElementById('clima')) {
+    clima();
+}
