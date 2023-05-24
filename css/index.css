@@ -112,6 +112,26 @@ navbar a:hover {
     background-color: #ddd;
     color: black;
   }
+  footer .linea2 {
+    display: inline;
+    margin: 20px;
+  }
+
+  footer .linea2 div {
+    text-align: center;
+    margin: 20px;
+  }
+  footer .linea2{
+    flex-direction: column;
+  }
+  .contacto{
+    font-size: 14px;
+    margin: 10px;
+
+
+  }
+  
+  
 }
 
 /*Responsive para iphone SE 375x667 */
