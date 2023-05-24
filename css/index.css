@@ -15,23 +15,22 @@ p {
 }
 
 .box_izq img {
-  height: 10vh;
+  height: 8vh;
 }
 
 #header {
   display: flex;
   background-color: white;
-  border: 1px solid;
+  height: auto;
+
 }
 
 .box_izq {
   align-content: center;
-  border: 1px solid;
 }
 
 .box_der {
   display: flex;
-  border: 1px solid;
   width: 94vw;
   justify-content: right;
   align-items: center;
@@ -70,22 +69,19 @@ navbar a:hover {
   #header {
     display: flex;
     background-color: white;
-    border: 1px solid;
   }
 
   .box_izq {
     align-content: center;
-    border: 1px solid;
     /* height: 5vh; */
   }
 
   .box_izq img {
-    height: 8vh;
+    height: 5vh;
   }
 
   .box_der {
     display: flex;
-    border: 1px solid;
     width: 80vw;
     justify-content: center;
     align-items: center;
@@ -163,13 +159,14 @@ a {
   margin: 0;
 }
 
-h1 {
+#contenido h1 {
   font-family: Sedgwick;
   text-align: center;
 }
 
 .bloque1 .img_ropa img {
   height: 300px;
+  border-radius: 15px;
 }
 
 .bloque1 {
@@ -212,6 +209,10 @@ p {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.texto_ubicacion p{
+  font-size: 30px;
 }
 
 /* Style footer */
