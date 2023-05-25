@@ -127,7 +127,6 @@ navbar a:hover {
 
   }
   
-  
 }
 
 /*Responsive para iphone SE 375x667 */
@@ -193,9 +192,12 @@ p {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin: 15vh;
+  margin-bottom: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
   justify-content: space-between;
   margin-top: 30vh;
+
 }
 
 .main div img {
